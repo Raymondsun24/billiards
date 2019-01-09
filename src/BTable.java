@@ -34,10 +34,10 @@ public class BTable{
 	public static final Point P4 = new Point(1270,1270);
 	public static final Point P6 = new Point(1270,0);
 
-    protected BBall cueBall;
-    protected BBall solid1,solid2,solid3,solid4,solid5,solid6,solid7;
-    protected BBall striped9,striped10,striped11,striped12,striped13,striped14,striped15;
-    protected BBall black8;
+    private BBall cueBall;
+    private BBall solid1,solid2,solid3,solid4,solid5,solid6,solid7;
+    private BBall striped9,striped10,striped11,striped12,striped13,striped14,striped15;
+    private BBall black8;
 
     // Constructor
     public BTable(){
@@ -58,5 +58,33 @@ public class BTable{
         this.striped14 = new StripedBall(14);
         this.striped15 = new StripedBall(15);
     }
+
+    // The following two functions consume a interger ranged from 0 to 15, indicating the number on the ball.
+    // CueBall is number 0 within the scope of module.
+    private BBall getBall(int n){
+        switch(n) {
+            case 0: return cueBall;
+            case 1: return solid1;
+            case 2: return solid2;
+            case 3: return solid3;
+            case return solid4;
+            if (n == 5) return solid5;
+            if (n == 6) return solid6;
+            if (n == 7) return solid7;
+            if (n == 8) return black8;
+            if (n == 9) return striped9;
+            if (n == 10) return striped10;
+            if (n == 11) return striped11;
+            if (n == 12) return striped12;
+            if (n == 13) return striped13;
+            if (n == 14) return striped14;
+            if (n == 15) return striped15;
+        }
+    }
+
+    public getPosition(int n){
+        return getBall(n).posn;
+    }
+
 
 }
