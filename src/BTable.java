@@ -1,3 +1,9 @@
+/* 
+    Contributor: Yizhi(Raymond) Sun
+    Last Update: Jan 30th, 2019
+*/
+
+
 import java.awt.*;
 
 public class BTable{
@@ -8,7 +14,7 @@ public class BTable{
     public static final int OUTERWIDTH = 1550;
     public static final int INNERLENGTH = 2540;
     public static final int INNERWIDTH = 1270;
-    public static final int POCKETRAD = 40;
+    public static final int POCKETRAD = 40; 
 
     /* P1 ------------------ P2
         |                    |
