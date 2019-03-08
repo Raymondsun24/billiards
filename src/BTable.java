@@ -31,7 +31,8 @@ public class BTable{
         |                    |
         |                    |
         P5 ----------------- P6
-        Let P5 be origin and set up a cartesian corrdinate system
+        Set P5 be origin and set up a cartesian corrdinate system
+        This is a 9-feet table
     */
 	public static final Point P5 = new Point(0,0);
 	public static final Point P1 = new Point(0,2540);
@@ -73,18 +74,19 @@ public class BTable{
             case 1: return solid1;
             case 2: return solid2;
             case 3: return solid3;
-            case return solid4;
-            if (n == 5) return solid5;
-            if (n == 6) return solid6;
-            if (n == 7) return solid7;
-            if (n == 8) return black8;
-            if (n == 9) return striped9;
-            if (n == 10) return striped10;
-            if (n == 11) return striped11;
-            if (n == 12) return striped12;
-            if (n == 13) return striped13;
-            if (n == 14) return striped14;
-            if (n == 15) return striped15;
+            case 4: return solid4;
+            case 5: return solid5;
+            case 6: return solid6;
+            case 7: return solid7;
+            case 8: return black8;
+            case 9: return striped9;
+            case 10: return striped10;
+            case 11: return striped11;
+            case 12: return striped12;
+            case 13: return striped13;
+            case 14: return striped14;
+            case 15: return striped15;
+            default: return null;
         }
     }
 
